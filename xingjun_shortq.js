@@ -47,7 +47,7 @@ const shortQData = [
     {
         id: "T3",
         qZh: "品读“遥怜故园菊”一句，其中一个“怜”字（怜惜/怀念）浸透了诗人怎样的复杂情感？",
-        qPy: "pǐn dú yáo lián gù yuán jú yī jù qǐng fān xī qī zhōng yí gè lián zì zài shū qíng shàng de jīng miào zhī chù",
+        qPy: "pǐn dú yáo lián gù yuán jú yī jù qí zhōng yí gè lián zì lián xī huái niàn jìn tòu le shī rén zěn yàng de fù zá qíng gǎn",
         qEn: "Appreciate line 3's 'pity/yearn (怜)'. What intricate layering of feelings does this single character compress?",
         sZh: [
             "1. 第一步：“遥怜”说明家乡就在眼前，还是在极度遥远、无法回去的战火沦陷区？",
@@ -67,7 +67,7 @@ const shortQData = [
     {
         id: "T4",
         qZh: "品析最后一句“应傍战场开”，分析“菊花”与“战场”这两个强烈对立的意象并列时所产生的艺术震撼力。",
-        qPy: "pǐn xī zuì hòu yí jù yīng bàng zhàn chǎng kāi fān xī jú huā yǔ zhàn chǎng zhè liǎng gè qiáng liè duì lì de yì xiàng bìng liè chǎn shēng de yì shù zhèn hàn lì",
+        qPy: "pǐn xī zuì hòu yí jù yīng bàng zhàn chǎng kāi fēn xī jú huā yǔ zhàn chǎng zhè liǎng gè qiáng liè duì lì de yì xiàng bìng liè shí suǒ chǎn shēng de yì shù zhèn hàn lì",
         qEn: "Analyze the last line 'blooming beside battlefields'. What immense artistic shock waves form when noble flowers clash with a horrific battlefield?",
         sZh: [
             "1. 第一步：在中国传统文化中，菊花通常象征着什么样的人格、生活和美丽？",
