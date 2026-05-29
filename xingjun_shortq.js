@@ -99,11 +99,7 @@ const shortQData = [
             "dì èr bù zài zhè shǒu shī de qián bàn bù fèn shī rén kàn sì zài bào yuàn shén me wú jiǔ kě hē xíng jūn jiān kǔ",
             "dì sān bù zuì hòu yí jù tū rán lā dà jìng tóu dào shén me chǎng miàn zhè shuō míng shī rén de zhōng jí guān huái ... 自己的口腹之欲，还是国家命运？"
         ],
-        sPy: [
-            "pǔ tōng de chóng yáng shī yī bān zhǐ guān zhù gè rén de shén me qíng xù bǐ rú wáng wéi de shǎo yī rén duō wéi rào qīn qíng hé gè rén gū dú",
-            "zài zhè shǒu shī de qián bàn bù fèn shī rén kàn sì zài bào yuàn shén me wú jiǔ kě hē xíng jūn jiān kǔ",
-            "zuì hòu yí jù tū rán lā dà jìng tóu dào shén me chǎng miàn zhè shuō míng shī rén de zhōng jí guān huái shì zì jǐ de kǒu fù zhī yù hái shì guó jiā mìng yùn"
-        ],
+        
         aZh: "普通重阳诗多围绕“个人孤独、怀念亲人”的私情展开。本诗前半部分看似在感叹无酒、登高的节日遗憾；但最后一句镜头骤然拉大，推向了血流成河的“战场”。这表明诗人在忍受个人痛苦的同时，灵魂深处时刻挂念着国家的安危与黎民百姓的生死。他将小我之思无缝升华为忧国忧民的爱国悲慨，格局宏大，气象万千。",
         aPy: "pǔ tōng chóng yáng shī duō wéi rào gè rén gū dú huái niàn qīn rén de sī qíng zhǎn kāi běn shī qián bàn bù fèn kàn sì zài gǎn tàn wú jiǔ dēng gāo de jié rì yí hàn dàn zuì hòu yí jù jìng tóu zhòu rán lā dà tuī xiàng le xuè liú chéng hé de zhàn chǎng zhè biǎo míng shī rén zài rěn shòu gè rén tòng kǔ de tóng shí líng hún shēn chù shí kè guà niàn zhe guó jiā de ān wēi yǔ lí mín bǎi xìng de shēng sǐ tā jiāng xiǎo wǒ zhī sī wú féng shēng huá wéi yōu guó yōu mín de ài guó bēi kǎi gé jú hóng dà qì xiàng wàn qiān",
         aEn: "Typical quatrains dwell inside private walls. The first half hints at petty individual regrets; but the final line drops a cinematic bombshell by showing wide active battlefields. Cen Shen channels his isolation into systemic worry over his fracturing nation, upgrading casual homesickness into timeless patriotic literature."
