@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>互动古诗：江南逢李龟年 · 杜甫 (中英双语·词解版)</title>
+    <title>互动古诗：行军九日思长安故园 · 岑参 (中英双语·词解版)</title>
+    <!-- 引入独立CSS -->
     <link rel="stylesheet" href="classic_style.css">
     
-    <script src="jiangnan_text.js"></script>
-    <script src="jiangnan_translation.js"></script>
-    <script src="jiangnan_analysis.js"></script>
-    <script src="jiangnan_quiz.js"></script>
-    <script src="jiangnan_shortq.js"></script>
+    <!-- 引入我们刚刚建立的 5 个专属新数据包 -->
+    <script src="xingjun_text.js"></script>
+    <script src="xingjun_translation.js"></script>
+    <script src="xingjun_analysis.js"></script>
+    <script src="xingjun_quiz.js"></script>
+    <script src="xingjun_shortq.js"></script>
 </head>
 <body>
  
 <div class="app-container">
+    <!-- 高端定制：双语带左右渐变横线作者面板 -->
     <div class="header-section" style="text-align: center !important; margin-bottom: 30px !important;">
-        <h1 class="title" style="font-family: 'Noto Serif SC', 'SimSun', serif !important; font-size: 2.5rem !important; font-weight: bold !important; color: #0f172a !important; margin-bottom: 12px !important; letter-spacing: 2px !important;">江南逢李龟年</h1>
+        <h1 class="title" style="font-family: 'Noto Serif SC', 'SimSun', serif !important; font-size: 2.5rem !important; font-weight: bold !important; color: #0f172a !important; margin-bottom: 12px !important; letter-spacing: 2px !important;">行军九日思长安故园</h1>
         
         <div class="author-wrapper" style="display: flex !important; align-items: center !important; justify-content: center !important; gap: 15px !important; max-width: 600px !important; margin: 0 auto !important;">
+            <!-- 左侧淡灰渐变线 -->
             <div style="flex: 1 !important; height: 1px !important; background: linear-gradient(to left, #cbd5e1, transparent) !important;"></div>
+            <!-- 中英作者名片 -->
             <p class="author" style="font-size: 0.95rem !important; color: #64748b !important; margin: 0 !important; white-space: nowrap !important; font-family: system-ui, -apple-system, sans-serif !important; letter-spacing: 0.5px !important;">
-                杜甫（唐）/ Du Fu (Tang Dynasty)
+                岑参（唐）/ Cen Shen (Tang Dynasty)
             </p>
+            <!-- 右侧淡灰渐变线 -->
             <div style="flex: 1 !important; height: 1px !important; background: linear-gradient(to right, #cbd5e1, transparent) !important;"></div>
         </div>
     </div>
     
     <div class="poem-container">
+        <!-- 古文原文动态容器 -->
         <div id="dynamic-poem-container"></div>
         
         <div class="translation-block" id="translationBlock">
@@ -65,7 +72,6 @@
     let originalQuizQuestions = [];
 
     // 【像素级注音对齐核心】：遇到数字、英文、斜杠、标点符号，自动注入透明的 &nbsp; 空格。
-    // 强制把拼音层拉到和文字等宽，完美确保后方真正汉字的注音永远严丝合缝、绝不往前插队抢位！
     function alignText(zh, py) {
         if (!zh) return '';
         const chars = zh.trim().split('');
@@ -74,7 +80,6 @@
         let html = '';
         
         for (let c of chars) {
-            // 正则匹配拦截：添加斜杠/、反斜杠\\ 以及数字字母和中英文全部符号
             if (/[0-9a-zA-Z\.\/\\\,，。？！：“”‘’（）《》、\-\:；—\(\)→\s]/.test(c)) {
                 html += `<span class="char-box"><span class="py-text" style="visibility: hidden;">&nbsp;</span><span class="punctuation">${c}</span></span>`;
             } else {
@@ -86,7 +91,6 @@
         return html;
     }
 
-    // 【同步前缀过滤器】：完美保证客观题题号、选项 A. B. C. D. 拼音空档占位
     function alignTextWithPrefix(prefix, zh, py) {
         if (!zh) return '';
         const chars = zh.trim().split('');
@@ -120,7 +124,6 @@
         initInteractions();
     };
 
-    // 【诗歌独立分行排版】：遇到标点即行拦截，控制行高 1.8 且收紧段落边距为 4px
     function renderPoem() {
         const container = document.getElementById('dynamic-poem-container');
         let html = '<div class="poem-paragraph" style="text-align: center !important; padding-left: 0 !important; margin: 0 auto !important; line-height: 1.8 !important;">'; 
