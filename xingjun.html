@@ -15,35 +15,50 @@
     <script src="xingjun_shortq.js"></script>
 
     <style>
-        /* 🎨 终极响应式气泡防火墙：电脑端精准悬浮，手机端自动变身丝滑底部抽屉 */
+        /* 🎨 终极响应式弹窗防火墙：电脑端保持精准悬浮，手机内嵌端自动变身居中遮罩弹窗 */
         .floating-tooltip {
-            position: fixed !important; /* 升级为相对于整个屏幕视口定位 */
+            position: fixed !important;
             z-index: 9999 !important;
             background: #ffffff !important;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
             border-radius: 12px !important;
-            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease !important;
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease !important;
         }
 
-        /* 🎯 当屏幕宽度小于 768px（手机端移动端）时自动触发大变身 */
+        /* 🎯 当屏幕宽度小于 768px 时，专为 Google Sites 手机内嵌优化：变身居中高显框 */
         @media (max-width: 768px) {
             .floating-tooltip {
-                left: 0 !important;
-                right: 0 !important;
-                bottom: 0 !important;
-                top: auto !important; /* 彻底废除可能导致切掉文字的绝对顶部计算坐标 */
-                width: 100% !important;
-                max-width: 100% !important;
-                border-radius: 20px 20px 0 0 !important; /* 高端移动端独有的上圆角抽屉 */
-                transform: translateY(100%) !important; /* 默认隐藏在屏幕最下方 */
-                padding: 20px 24px 30px 24px !important; /* 为底部返回键和手势留足安全呼吸空间 */
-                box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15) !important;
+                position: fixed !important;
+                top: 50% !important;   /* 锁定屏幕垂直正中央 */
+                left: 50% !important;  /* 锁定屏幕水平正中央 */
+                bottom: auto !important;
+                right: auto !important;
+                transform: translate(-50%, -40%) scale(0.9) !important; /* 居中且稍微向下偏移，带轻微缩放动画 */
+                width: 88% !important;  /* 撑满手机屏幕两侧，留出呼吸边距 */
+                max-width: 340px !important; /* 限制最大宽度，防止横向溢出 */
+                border-radius: 16px !important; /* 精美四周圆角 */
+                padding: 20px 20px 24px 20px !important;
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2) !important;
                 box-sizing: border-box !important;
+                opacity: 0;
             }
             
-            /* 当点亮显示时，从下方丝滑平移升起 */
+            /* 当激活显示时，丝滑放大并居中归位 */
             .floating-tooltip.show {
-                transform: translateY(0) !important;
+                transform: translate(-50%, -50%) scale(1) !important;
+                opacity: 1 !important;
+            }
+
+            /* 在弹窗右上角追加一个极为显眼的“关闭”小提示，优化移动端体验 */
+            .floating-tooltip::after {
+                content: "点击空白处关闭";
+                display: block;
+                text-align: center;
+                font-size: 0.75rem;
+                color: #94a3b8;
+                margin-top: 16px;
+                border-top: 1px dashed #f1f5f9;
+                padding-top: 8px;
             }
         }
     </style>
@@ -383,7 +398,7 @@
         const dispEn = document.getElementById('disp-en');
         const examTag = document.getElementById('exam-tag');
         
-        // 🎯 核心升级：智能感知设备宽度。桌面端追踪悬浮，移动端固定屏幕底部从下往上缓缓升起，完美防切割！
+        // 🎯 核心逻辑大重构：完美绕开 Google Sites 的视口切断
         words.forEach(word => {
             word.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -399,11 +414,11 @@
                 tooltip.style.display = 'block';
                 
                 if (window.innerWidth <= 768) {
-                    // 手机移动端：放空动态计算定位，由 CSS bottom:0 和 transform 接管
-                    tooltip.style.top = 'auto';
-                    tooltip.style.left = '0';
+                    // 🎯 核心修复：手机端切换为“屏幕中央绝对留白弹窗”，无视任何贴底工具栏，彻底消除切割！
+                    tooltip.style.top = '50%';
+                    tooltip.style.left = '50%';
                 } else {
-                    // 桌面电脑端：继续保持原汁原味的垂直咬合悬浮样式
+                    // 电脑端：继续优雅追踪光标悬浮
                     const rect = this.getBoundingClientRect();
                     tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 20}px`;
                     tooltip.style.left = `${rect.left + window.scrollX + rect.width / 2}px`;
