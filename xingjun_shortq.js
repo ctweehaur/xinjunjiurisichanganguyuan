@@ -16,7 +16,7 @@ const shortQData = [
         // 核心修复：把原先开头的 yī、èr、sān 彻底删掉，直接从真正对应的汉字“第 (dì)”开始匹配
         sPy: [
             "dì yī bù zhèng cháng dà píng shèng shì de chóng yáng jié rén men qù dēng gāo yuǎn tiào shí xīn qíng yīng gāi shì zěn yàng de",
-            "dì èr bù jié hé ān shǐ zhī luàn de lì shǐ bèi jǐng shī rén cǐ shí zhèng suí jūn yuǎn zhēng yí lù shàng huì kàn dào nǎ xiē jǐng xiàng",
+            "dì èr bù jié hé ān shǐ zhī luàn de lì shǐ bèi jǐng shī rén cǐ shí zhèng zài suí jūn yuǎn zhēng yí lù shàng huì kàn dào nǎ xiē jǐng xiàng",
             "dì sān bù zài rú cǐ nèi yōu wài huàn shēn xīn jù pí de qíng kuàng xià zhè gè qiǎng miǎn qiǎng zì fǎn yǐng le tā zěn yàng de nèi xīn zhèng zhá"
         ],
         sEn: "Step 1: In a peaceful era, what should people's emotional state be when climbing mountains during festivals?<br>Step 2: Tied to the rebellion background, the poet is on a harsh military march. What sights surround him?<br>Step 3: Trapped in national turmoil and total exhaustion, what mental struggle does this word 'qiǎng' reveal?",
