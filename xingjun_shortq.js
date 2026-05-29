@@ -1,5 +1,5 @@
 /**
- * 互动古文教学平台 - 《行军九日思长安故园》简答题特训题库 (5题递进引导版)
+ * 互动古文教学平台 - 《行军九日思长安故园》简答题特训题库 (5题高阶全引导·纯净终极版)
  */
 
 const shortQData = [
@@ -26,21 +26,21 @@ const shortQData = [
     {
         id: "T2",
         qZh: "如何理解“无人送酒来”一句中所使用的文学典故及其传递的孤独感？",
-        qPy: "rú hé lǐ jiě wú rén sòng jiǔ lái yī jù zhōng suǒ shǐ yòng de wén xué diǎn gù jí qí chuán dì de gū dú gǎn",
+        qPy: "rú hé lǐ jiě wú rén sòng jiǔ lái yī jù zhōng suǒ shǐ yòng de wén xué diǎn gù jí qí chu端 dì de gū dú gǎn",
         qEn: "How should we unpack the historical allusion utilized in 'no one to bring wine' and the isolation it conveys?",
         sZh: [
             "1. 第一步：这句诗化用了古代哪位隐逸名人重阳节有白衣使者及时送酒的温情故事？",
-            "2. 第二步：诗人在战场军旅的艰苦环境下，能够享享受这种名士清高、老友送酒的雅趣吗？",
+            "2. 第二步：诗人在战场军旅的艰苦环境下，能够享受到这种名士清高、老友送酒的雅趣吗？",
             "3. 第三步：“无人”两个字，除了写没有酒喝，更深刻地戳中了诗人在异乡战乱中的什么处境？"
         ],
         sPy: [
-            "yī dì yī bù zhè jù shī huà yòng le gǔ dài nǎ wèi yǐn yì míng rén chóng yáng jié yǒu bái yī shǐ zhě jí shí sòng jiǔ de wén qíng gù shì",
+            "yī dì yī bù zhè jù shī huà yòng le gǔ dài nǎ wèi yǐn yì míng rén chóng yáng jié yǒu bái yī shǐ zhě jí shí sòng jiǔ de wén qíng gù指示",
             "èr dì èr bù shī rén zài zhàn chǎng jūn lǚ de jiān kǔ huán jìng xià néng gòu xiǎng shòu dào zhè zhǒng míng shì qīng gāo lǎo yǒu sòng jiǔ de yǎ qù ma",
             "sān dì sān bù wú rén liǎng gè zì chú le xiě méi yǒu jiǔ hē gèng shēn kè de chuō zhòng le shī rén zài yì xiāng zhàn luàn zhōng de shén me chǔ jìng"
         ],
         sEn: "Step 1: Which recluse's touching legend of a messenger arriving with wine on Double Ninth does this borrow?<br>Step 2: Under raw military marching, can Cen Shen experience such elite peacetime aesthetic connections?<br>Step 3: Beyond lacking wine, what deep existential trauma of the poet does 'wú rén (no one)' expose?",
         aZh: "此句深层化用了晋代隐士陶渊明在重阳节无酒时，江州刺史王弘特派“白衣使者”及时送美酒而至的清高典故。岑参身处金戈铁马、风沙蔽日的艰苦军旅中，残酷的战乱斩断了所有的名士风流与亲友温情。一个“无人”不仅写出了无酒可饮的节日遗憾，更深刻刻画了战火中举目无亲、孤独伶仃的漂泊处境。",
-        aPy: "cǐ jù shēn céng huà yòng le jìn dài yǐn shì táo yuān míng zài chóng yáng jié wú jiǔ shí jiāng zhōu cì shǐ wáng hóng tè pài bái yī shǐ zhě jí shí sòng měi jiǔ ér zhì de qīng gāo diǎn gù cén shān shēn chǔ jīn gē tiě mǎ fēng shā bì rì de jiān kǔ jūn lǚ zhōng cán kù de zhàn luàn zhǎn duàn le suǒ huyou de míng shì fēng liú yǔ qīn yǒu wén qíng yí gè wú rén bù jǐn xiě chū le wú jiǔ kě yǐn de jié rì yí hàn gèng shēn kè kè huà le zhàn huǒ zhōng jǔ mù wú qīn gū dú líng dīng de piāo bó chǔ jìng",
+        aPy: "cǐ jù shēn céng huà yòng le jìn dài yǐn shì táo yuān míng zài chóng yáng jié wú jiǔ shí jiāng zhōu cì shǐ wáng hóng tè pài bái yī shǐ zhě jí shí sòng měi jiǔ ér zhì de qīng gāo diǎn gù cén shān shēn chǔ jīn gē tiě mǎ fēng shā bì rì de jiān kǔ jūn lǚ zhōng cán kù de zhàn luàn zhǎn duàn le suǒ yǒu de míng shì fēng liú yǔ qīn yǒu wén qíng yí gè wú rén bù jǐn xiě chū le wú jiǔ kě yǐn de jié rì yí hàn gèng shēn kè kè huà le zhàn huǒ zhōng jǔ mù wú qīn gū dú líng dīng de piāo bó chǔ jìng",
         aEn: "This invokes Tao Yuanming's famous historical episode where an official dispatched a messenger with wine. Locked in bleak, dusty military camps, Cen Shen's wartime existence strips away all refined leisure and friendship. 'No one' registers more than missing wine; it flags his profound, absolute isolation amidst a world on fire."
     },
     {
@@ -54,19 +54,19 @@ const shortQData = [
             "3. 第三步：对家乡菊花的这份爱怜，实际上转移并升华成了对家乡什么人和国家的什么情感？"
         ],
         sPy: [
-            "yī dì yī bù yáo lián shuō míng jiā xiāng jiù zài yǎn qián hái ... 只能隔空怀念。",
-            "èr dì èr bù shī rén lián xī de jǐn jǐn... 菊花在诗中代表着什么？",
-            "sān dì sān bù duì jiā xiāng jú huā de zhè... 实际上转移并升华成了对家乡什么人和国家的什么情感？"
+            "yī dì yī bù yáo lián shuō míng jiā xiāng jiù zài yǎn qián hái shì zài jí dù yáo yuǎn wú fǎ huí qù de zhàn huǒ lún xiàn qū",
+            "èr dì èr bù shī rén lián xī de jǐn jǐn shì nà yī duǒ duǒ měi lì de jú huā ma jú huā zài shī zhōng dài biǎo zhe shén me",
+            "sān dì sān bù duì jiā xiāng jú huā de zhè fèn ài lián shí jì shàng zhuǎn yí bìng shēng huá chéng le duì jiā xiāng shén me rén hé guó jiā de shén me qíng gǎn"
         ],
         sEn: "Step 1: Does '遥' map a home right nearby, or a distant, unreachable zone captured by enemies?<br>Step 2: Is the poet merely pitying literal flowers? What do those hometown blooms represent in this context?<br>Step 3: Who and what does his tender pity for the flowers ultimately elevate and transform into?",
-        aZh: "一个“怜”字包含了思念、痛惜与悲伤等多重情感。首先，“遥”字点明身处相隔千里的西征途中，只能隔空怀念。其次，诗人怜惜的不仅是深秋中无家主照料的菊花，更是借由菊花这个核心意象，去寄托对满目疮痍、惨遭蹂躏的故乡长安的痛苦牵挂，以及对战火中挣扎的父老乡乡亲的深切同情。",
-        aPy: "yí gè lián zì bāo hán le sī niàn tòng xī yǔ bēi shāng děng duō chóng qíng gǎn shǒu xiān yáo zì diǎn míng shēn chǔ xiāng gé qiān lǐ de... 对战火中挣扎的父老乡亲的深切同情。",
+        aZh: "一个“怜”字包含了思念、痛惜与悲伤等多重情感。首先，“遥”字点明身处相隔千里的西征途中，只能隔空怀念。其次，诗人怜惜的不仅是深秋中无家主照料的菊花，更是借由菊花这个核心意象，去寄托对满目疮痍、惨遭蹂躏的故乡长安的痛苦牵挂，以及对战火中挣扎的父老乡亲的深切同情。",
+        aPy: "yí gè lián zì bāo hán le sī niàn tòng xī yǔ bēi shāng děng duō chóng qíng gǎn shǒu xiān yáo zì diǎn míng shēn chǔ xiāng gé qiān lǐ de xī zhēng tú zhōng zhǐ néng gé kōng huái niàn qí cì shī rén lián xī de bù jǐn shì shēn qiū zhōng wú jiā zhǔ zhào liào de jú huā gèng shì jiè yóu jú huā zhè gè hé xīn yì xiàng qù jì tuō duì mǎn mù chuāng yí cǎn zāo róu lìn de gù xiāng cháng ān de tòng kǔ qiān guà yǐ jí duì zhàn huǒ zhōng zhèng zhá de fù lǎo xiāng qīn de shēn qiè tóng qíng",
         aEn: "The word 'lián' compresses longing, profound grief, and empathy. The '遥' locates him thousands of miles away on a march, unable to return. He pities the autumn blooms left untended, but through them, he projects a shattering anxiety for devastated Chang'an and a heavy wave of sympathy for its suffering citizens."
     },
     {
         id: "T4",
         qZh: "品析最后一句“应傍战场开”，分析“菊花”与“战场”这两个强烈对立的意象并列时所产生的艺术震撼力。",
-        qPy: "pǐn xī zuì hòu yí jù yīng bàng zhàn chǎng kāi fān xī jú huā yǔ zhàn chǎng zhè liǎng gè qiáng liè duì lì de yì xiàng bìng liè chǎn shēng de yì shù zhèn hàn lì",
+        qPy: "pǐn xī zuui hòu yí jù yīng bàng zhàn chǎng kāi fān xī jú huā yǔ zhàn chǎng zhè liǎng gè qiáng liè duì lì de yì xiàng bìng liè chǎn shēng de yì shù zhèn hàn lì",
         qEn: "Analyze the last line 'blooming beside battlefields'. What immense artistic shock waves form when noble flowers clash with a horrific battlefield?",
         sZh: [
             "1. 第一步：在中国传统文化中，菊花通常象征着什么样的人格、生活和美丽？",
@@ -80,13 +80,13 @@ const shortQData = [
         ],
         sEn: "Step 1: In Chinese culture, what kind of moral character, peace, and beauty do chrysanthemums represent?<br>Step 2: What explicit mental pictures does the word 'battlefield' trigger? (Blood, death, devastation)<br>Step 3: What existential emotional impact forms when peak natural beauty is chained directly to peak destruction?",
         aZh: "这句诗制造了极为震撼的“反差艺术”。菊花在中国传统文化中象征着清高、高洁与宁静祥和的盛世生活；而战场则充斥着流血、死亡与血腥毁灭。诗人打破常规，将最圣洁的美丽与最残酷的毁灭钉在同一个空间。这种巨大的冲突，将盛世的坍塌、人命如草芥的真实惨烈，以极其惊心动魄的视觉张力呈现了出来。",
-        aPy: "zhè jù shī zhì zào le jí wéi zhèn hàn de fǎn chā yì shù jú huā zài zhōng guó chuán tǒng wén huà zhōng xiàng zhēng zhe qīng gāo gāo jié yǔ níng jìng xiáng hé de shèng... 呈现了出来。",
+        aPy: "zhè jù shī zhì zào le jí wéi zhèn hàn de fǎn chā yì shù jú huā zài zhōng guó chuán tǒng wén huà zhōng xiàng zhēng zhe qīng gāo gāo jié yǔ níng jìng xiáng hé de shèng shì shēng huó ér zhàn chǎng zé chōng chì zhe liú xuè sǐ wáng yǔ xuè xīng huǐ miè shī rén dǎ pò cháng guī jiāng zuì shèng jié de měi lì yǔ zuì cán kù de huǐ miè dīng zài tóng yí gè kōng jiān zhè zhǒng jù dà de chōng tū jiāng shèng shì de tān tā rén mìng rú cǎo jiè de zhēn shí cǎn liè yǐ jí qí jīng xīn dòng pò de shì jué zhāng lì chéng xiàn le chū lái",
         aEn: "This establishes a brilliant study in contrast. Chrysanthemums anchor serenity, moral beauty, and peaceful life; battlefields embody slaughter, chaos, and ruin. Forcing the purest elegance onto the grimmest wreckage generates immense narrative tension, charting an empire's ruin with absolute cinematic shock value."
     },
     {
         id: "T5",
         qZh: "这首诗是如何突破传统重阳节思乡诗的“小格局”，从而展现出忧国忧民的宏大悲慨的？",
-        qPy: "zhè shǒu shī shì rú hé tū pò chuán tǒng chóng yáng jié sī xiāng shī de xiǎo gé jú cóng ér zhǎn xiàn chū yōu guó yōu mín de hóng dà bēi kǎi de",
+        qPy: "shī jiāng gè rén sī xiāng róng rù yōu guó yōu mín de ài guó bēi kǎi zhī zhōng",
         qEn: "How does this piece break through the narrow sentimental boundaries of standard festival homesickness to broadcast grand patriotic grief?",
         sZh: [
             "1. 第一步：普通的重阳诗一般只关注个人的什么情绪？（比如王维的“少一人”，多围绕亲情和个人孤独）",
@@ -94,13 +94,13 @@ const shortQData = [
             "3. 第三步：最后一句突然拉大镜头到什么场面？这说明诗人的终极关怀是自己的口腹之欲，还是国家命运？"
         ],
         sPy: [
-            "yī dì yī bù pǔ tōng de chóng yáng shī yī bān zhǐ guān zhù gè... 少一人，多围绕亲情和个人孤独",
-            "èr dì èr bù zài zhè shǒu shī de qián bàn bù fèn shī rén kàn... 无酒可喝、行军艰苦",
-            "sān dì sān bù zuì hòu yí jù tū rán lā dà jìng tóu dào shén me chǎng... 自己的口腹之欲，还是国家命运？"
+            "yī dì yī bù pǔ tōng de chóng yáng shī yī bān zhǐ guān zhù gè rén de shén me qíng xù bǐ rú wáng wéi de shǎo yī rén duō wéi rào qīn qíng hé gè rén gū dú",
+            "èr dì èr bù zài zhè shǒu shī de qián bàn bù fèn shī rén kàn sì zài bào yuàn shén me wú jiǔ kě hē xíng jūn jiān kǔ",
+            "sān dì sān bù zuì hòu yí jù tū rán lā dà jìng tóu dào shén me chǎng miàn zhè shuō míng shī rén de zhōng jí guān huái shì zì jǐ de kǒu fù zhī yù hái shì guó jiā mìng yùn"
         ],
         sEn: "Step 1: What micro-emotions do typical festival verses center on? (e.g., Wang Wei's missing relatives)<br>Step 2: In the first half, what superficial complaints does the poet seem to level? (Lack of wine, grueling march)<br>Step 3: What massive widescreen visualization dominates the last line? What does this declare about his focus?",
         aZh: "普通重阳诗多围绕“个人孤独、怀念亲人”的私情展开。本诗前半部分看似在感叹无酒、登高的节日遗憾；但最后一句镜头骤然拉大，推向了血流成河的“战场”。这表明诗人在忍受个人痛苦的同时，灵魂深处时刻挂念着国家的安危与黎民百姓的生死。他将小我之思无缝升华为忧国忧民的爱国悲慨，格局宏大，气象万千。",
-        aPy: "pǔ tōng chóng yáng shī duō wéi rào gè rén gū dú huái niàn qīn rén de sī qíng zhǎn kāi běn shī qián bàn bù fèn kàn sì zài gǎn tàn wú jiǔ dēng gāo de jié rì... 忧国忧民的爱国悲慨，格局宏大，气象万千。",
+        aPy: "pǔ tōng chóng yáng shī duō wéi rào gè rén gū dú huái niàn qīn rén de sī qíng zhǎn kāi běn shī qián bàn bù fèn kàn sì zài gǎn tàn wú jiǔ dēng gāo de jié rì yí hàn dàn zuì hòu yí jù jìng tóu zhòu rán lā dà tuī xiàng le xuè liú chéng hé de zhàn chǎng zhè biǎo míng shī rén zài rěn shòu gè rén tòng kǔ de tóng shí líng hún shēn chù shí kè guà niàn zhe guó jiā de ān wēi yǔ lí mín bǎi xìng de shēng sǐ tā jiāng xiǎo wǒ zhī sī wú féng shēng huá wéi yōu guó yōu mín de ài guó bēi kǎi gé jú hóng dà qì xiàng wàn qiān",
         aEn: "Typical quatrains dwell inside private walls. The first half hints at petty individual regrets; but the final line drops a cinematic bombshell by showing wide active battlefields. Cen Shen channels his isolation into systemic worry over his fracturing nation, upgrading casual homesickness into timeless patriotic literature."
     }
 ];
