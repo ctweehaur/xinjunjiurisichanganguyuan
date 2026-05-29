@@ -7,12 +7,46 @@
     <!-- 引入独立CSS -->
     <link rel="stylesheet" href="classic_style.css">
     
-    <!-- 引入我们刚刚建立的 5 个专属新数据包 -->
+    <!-- 引入 5 个专属数据包 -->
     <script src="xingjun_text.js"></script>
     <script src="xingjun_translation.js"></script>
     <script src="xingjun_analysis.js"></script>
     <script src="xingjun_quiz.js"></script>
     <script src="xingjun_shortq.js"></script>
+
+    <style>
+        /* 🎨 终极响应式气泡防火墙：电脑端精准悬浮，手机端自动变身丝滑底部抽屉 */
+        .floating-tooltip {
+            position: fixed !important; /* 升级为相对于整个屏幕视口定位 */
+            z-index: 9999 !important;
+            background: #ffffff !important;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+            border-radius: 12px !important;
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease !important;
+        }
+
+        /* 🎯 当屏幕宽度小于 768px（手机端移动端）时自动触发大变身 */
+        @media (max-width: 768px) {
+            .floating-tooltip {
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                top: auto !important; /* 彻底废除可能导致切掉文字的绝对顶部计算坐标 */
+                width: 100% !important;
+                max-width: 100% !important;
+                border-radius: 20px 20px 0 0 !important; /* 高端移动端独有的上圆角抽屉 */
+                transform: translateY(100%) !important; /* 默认隐藏在屏幕最下方 */
+                padding: 20px 24px 30px 24px !important; /* 为底部返回键和手势留足安全呼吸空间 */
+                box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15) !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* 当点亮显示时，从下方丝滑平移升起 */
+            .floating-tooltip.show {
+                transform: translateY(0) !important;
+            }
+        }
+    </style>
 </head>
 <body>
  
@@ -349,6 +383,7 @@
         const dispEn = document.getElementById('disp-en');
         const examTag = document.getElementById('exam-tag');
         
+        // 🎯 核心升级：智能感知设备宽度。桌面端追踪悬浮，移动端固定屏幕底部从下往上缓缓升起，完美防切割！
         words.forEach(word => {
             word.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -362,9 +397,18 @@
                 examTag.style.display = (this.getAttribute('data-exam') === 'true') ? 'inline-block' : 'none';
                 
                 tooltip.style.display = 'block';
-                const rect = this.getBoundingClientRect();
-                tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 20}px`;
-                tooltip.style.left = `${rect.left + window.scrollX + rect.width/2}px`;
+                
+                if (window.innerWidth <= 768) {
+                    // 手机移动端：放空动态计算定位，由 CSS bottom:0 和 transform 接管
+                    tooltip.style.top = 'auto';
+                    tooltip.style.left = '0';
+                } else {
+                    // 桌面电脑端：继续保持原汁原味的垂直咬合悬浮样式
+                    const rect = this.getBoundingClientRect();
+                    tooltip.style.top = `${rect.top + window.scrollY - tooltip.offsetHeight - 20}px`;
+                    tooltip.style.left = `${rect.left + window.scrollX + rect.width / 2}px`;
+                }
+                
                 setTimeout(() => tooltip.classList.add('show'), 10);
             });
         });
